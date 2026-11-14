@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Handover Hub for Jira — support, privacy, terms</title>
+<style>body{font:16px/1.6 system-ui,sans-serif;max-width:760px;margin:48px auto;padding:0 20px;color:#172b4d}a{color:#0c66e4}h2{margin-top:2em}</style></head><body>
+<h1>Handover Hub for Jira</h1>
+<p>When someone leaves a team, Handover Hub finds everything they own in Jira — open issues per project, projects and components they lead, filters and dashboards they own — suggests who is best placed to take over based on resolved work and current workload, hands the work over in one click, and keeps an audit log. A Rovo agent (also available to external AI agents through MCP) answers "what does this person own?" and "who should take over?".</p>
+
+<h2 id="support">Support</h2>
+<p>Questions, bugs and feature requests: open an issue at <a href="https://github.com/mertbatis/kronides-apps/issues">github.com/mertbatis/kronides-apps/issues</a>. We aim to answer within two business days.</p>
+<h3>Setup</h3>
+<ol><li>Install the app in Jira and open <b>Apps → Handover Hub</b>.</li>
+<li>Pick the person who is leaving. Optionally pick a default successor for ownership items and for projects without a suggestion.</li>
+<li>Use <b>Suggest who should take over</b> per project, then <b>Hand over</b>. Reassigning uses your own Jira permissions; transferring project leads, filters and dashboards needs Jira administrator permission.</li>
+<li>Rovo: open Rovo chat and choose the agent <b>Handover Assistant</b>. The agent is read-only.</li></ol>
+
+<h2 id="privacy">Privacy policy</h2>
+<p><i>Last updated: 14 November 2026</i></p>
+<p>Handover Hub runs entirely on Atlassian Forge ("Runs on Atlassian"). It has no servers of its own and sends no data outside Atlassian.</p>
+<ul><li><b>What the app reads:</b> projects, components, filters, dashboards, issue counts and the assignees of resolved issues, using the permissions of the user who is viewing.</li>
+<li><b>What the app changes:</b> only what a user explicitly confirms in the app: issue assignees, project and component leads, filter and dashboard owners.</li>
+<li><b>What the app stores:</b> a handover log (what was moved, the display names of the previous and new owner, the time, and the account ID of the user who performed it) in Forge storage inside your Atlassian site, limited to the latest 200 entries.</li>
+<li><b>Sharing:</b> none. No analytics, no third-party services, no outbound network access.</li>
+<li><b>AI:</b> the Rovo agent and MCP tools are read-only and return the same facts the page shows; the language model is Atlassian Rovo, operated by Atlassian under your Atlassian agreement.</li>
+<li><b>Deletion:</b> uninstalling the app deletes its stored data according to Atlassian Forge's data lifecycle.</li></ul>
+
+<h2 id="terms">Terms of service</h2>
+<p><i>Last updated: 14 November 2026</i></p>
+<p>Handover Hub is provided "as is", without warranty of any kind. Successor suggestions are evidence-based hints, not decisions: the person performing a hand-over is responsible for it. Changes made with the app can be reversed in Jira by reassigning or transferring again. To the extent permitted by law, the author is not liable for any damages arising from use of the app. You may stop using the app at any time by uninstalling it. These terms may be updated; the date above shows the latest change.</p>
+</body></html>
