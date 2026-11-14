@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SoD Guard for Jira — support, privacy, terms</title>
+<style>body{font:16px/1.6 system-ui,sans-serif;max-width:760px;margin:48px auto;padding:0 20px;color:#172b4d}a{color:#0c66e4}h2{margin-top:2em}code{background:#f1f2f4;padding:1px 5px;border-radius:3px}</style></head><body>
+<h1>SoD Guard for Jira</h1>
+<p>SoD Guard checks segregation of duties in Jira change management: the person who implements a change must not be the person who approves it. It shows the chain of custody on every issue, a compliance dashboard with evidence export, an optional workflow validator that blocks self-approval, and a Rovo agent (also available to external AI agents through MCP) that answers audit questions.</p>
+
+<h2 id="support">Support</h2>
+<p>Questions, bugs and feature requests: open an issue at <a href="https://github.com/mertbatis/kronides-apps/issues">github.com/mertbatis/kronides-apps/issues</a>. We aim to answer within two business days.</p>
+<h3>Setup</h3>
+<ol><li>Install the app in Jira. Detection works immediately with no configuration: statuses in the "In Progress" category count as build statuses, statuses in the "Done" category count as approval.</li>
+<li>Open <b>Apps → SoD Guard</b> for the dashboard. Jira administrators can adjust the policy on the <b>Policy</b> tab.</li>
+<li>Optional blocking: edit a workflow, select the transition into your approval status, add the rule <b>SoD Guard: block self-approval</b> and publish.</li>
+<li>Rovo: open Rovo chat and choose the agent <b>SoD Auditor</b>.</li></ol>
+
+<h2 id="privacy">Privacy policy</h2>
+<p><i>Last updated: 14 November 2026</i></p>
+<p>SoD Guard runs entirely on Atlassian Forge ("Runs on Atlassian"). It has no servers of its own and sends no data outside Atlassian.</p>
+<ul><li><b>What the app reads:</b> issue keys, summaries, types, statuses, assignees, reporters and the status/assignee change history of issues, using the permissions of the user who is viewing (or of the app for the workflow validator and the daily scan).</li>
+<li><b>What the app stores:</b> the policy you configure and a daily count of approved issues and violations, in Forge storage inside your Atlassian site. It does not store issue content or personal profiles. Atlassian account IDs are only held in memory while a request is processed.</li>
+<li><b>Sharing:</b> none. No analytics, no third-party services, no outbound network access.</li>
+<li><b>AI:</b> the Rovo agent and MCP tools return the same facts the dashboard shows; the language model is Atlassian Rovo, operated by Atlassian under your Atlassian agreement.</li>
+<li><b>Deletion:</b> uninstalling the app deletes its stored data according to Atlassian Forge's data lifecycle.</li></ul>
+
+<h2 id="terms">Terms of service</h2>
+<p><i>Last updated: 14 November 2026</i></p>
+<p>SoD Guard is provided "as is", without warranty of any kind. It reports what Jira's history records; it is an aid for control testing and does not replace your auditors' or compliance officers' judgement. A flagged issue means a control was not followed, not that anybody acted improperly. To the extent permitted by law, the author is not liable for any damages arising from use of the app. You may stop using the app at any time by uninstalling it. These terms may be updated; the date above shows the latest change.</p>
+</body></html>
