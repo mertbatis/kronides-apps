@@ -1,0 +1,28 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Aftermath for Jira — support, privacy, terms</title>
+<style>body{font:16px/1.6 system-ui,sans-serif;max-width:760px;margin:48px auto;padding:0 20px;color:#172b4d}a{color:#0c66e4}h2{margin-top:2em}</style></head><body>
+<h1>Aftermath for Jira</h1>
+<p>Aftermath turns an incident into a blameless postmortem. On an incident it rebuilds the timeline from Jira history and comments, measures time to first human response, to escalation and to resolution, and finds earlier incidents that look the same. One click writes a postmortem page to Confluence with those facts, creates linked follow-up tasks, and leaves a comment on the incident. A project page groups incidents that keep coming back, and a Rovo agent (also available to external AI agents through MCP) summarizes incidents and patterns.</p>
+
+<h2 id="support">Support</h2>
+<p>Questions, bugs and feature requests: open an issue at <a href="https://github.com/mertbatis/kronides-apps/issues">github.com/mertbatis/kronides-apps/issues</a>. We aim to answer within two business days.</p>
+<h3>Setup</h3>
+<ol><li>Install the app in Jira <b>and</b> in Confluence on the same site (pages are created in Confluence).</li>
+<li>Open an incident and expand the <b>Aftermath</b> panel (or add it from the app button on the work item).</li>
+<li>Review the timeline, type follow-up actions (one per line), pick a Confluence space and press <b>Draft postmortem in Confluence</b>. Everything is created with your own permissions.</li>
+<li>Open <b>Incident patterns</b> in the project sidebar to see what keeps coming back.</li>
+<li>Rovo: open Rovo chat and choose the agent <b>Aftermath</b>. The agent is read-only.</li></ol>
+
+<h2 id="privacy">Privacy policy</h2>
+<p><i>Last updated: 15 November 2026</i></p>
+<p>Aftermath runs entirely on Atlassian Forge ("Runs on Atlassian"). It has no servers of its own and sends no data outside Atlassian.</p>
+<ul><li><b>What the app reads:</b> the viewed incident (summary, description, priority, dates, reporter, change history, comments) and summaries and dates of earlier work items of the same type in the same project; the list of Confluence spaces the user can see. All with the permissions of the user who is viewing.</li>
+<li><b>What the app changes:</b> only when a user presses the button: one Confluence page, the follow-up work items the user typed (linked to the incident) and one comment on the incident.</li>
+<li><b>What the app stores:</b> for each postmortem, the page link and title, the follow-up keys, the account ID of the user and the time, in Forge storage inside your Atlassian site.</li>
+<li><b>Sharing:</b> none. No analytics, no third-party services, no outbound network access. Similarity is computed inside the app; no incident text is sent to any language model by the app itself.</li>
+<li><b>AI:</b> the Rovo agent and MCP tools are read-only and return the same facts the panel shows; the language model is Atlassian Rovo, operated by Atlassian under your Atlassian agreement.</li>
+<li><b>Deletion:</b> uninstalling the app deletes its stored data according to Atlassian Forge's data lifecycle. Pages and work items it created belong to your site and stay until you delete them.</li></ul>
+
+<h2 id="terms">Terms of service</h2>
+<p><i>Last updated: 15 November 2026</i></p>
+<p>Aftermath is provided "as is", without warranty of any kind. Postmortem pages are drafts built from Jira data; your team is responsible for their content and conclusions. Everything the app creates can be edited or deleted in Jira and Confluence. To the extent permitted by law, the developer is not liable for any indirect or consequential damages arising from use of the app. Use of the app is also subject to the Atlassian Marketplace terms.</p>
+</body></html>
