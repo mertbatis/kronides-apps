@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CAPA Keeper for Jira — support, privacy, terms</title>
+<style>body{font:16px/1.6 system-ui,sans-serif;max-width:760px;margin:48px auto;padding:0 20px;color:#172b4d}a{color:#0c66e4}h2{margin-top:2em}code{background:#f1f2f4;padding:1px 4px;border-radius:3px}</style></head><body>
+<h1>CAPA Keeper for Jira</h1>
+<p>CAPA Keeper keeps corrective and preventive actions (CAPA, as required by ISO 13485 §8.5.2 and 21 CFR 820.100) audit-ready in Jira. It works out each CAPA's stage from the evidence on the record (a documented root cause, linked corrective actions, all actions done, and an independent effectiveness check after a waiting period), flags CAPAs that were closed without evidence, verified by their own owner, verified too early or that are past their target date, and can block closure until the evidence is there.</p>
+
+<h2 id="support">Support</h2>
+<p>Questions, bugs and feature requests: open an issue at <a href="https://github.com/mertbatis/kronides-apps/issues">github.com/mertbatis/kronides-apps/issues</a>. We aim to answer within two business days.</p>
+<h3>Setup</h3>
+<ol><li>Install the app in Jira. CAPAs are the work items matching a JQL filter; the default is <code>labels = capa</code> (change it in <b>Apps → CAPA Keeper → Settings</b>).</li>
+<li>Record evidence the way your team already writes: a line starting with <code>Root cause:</code> in the description or a comment, linked work items or subtasks for corrective actions, and a comment starting with <code>Effectiveness check:</code> for the verification.</li>
+<li>Open the <b>CAPA Keeper</b> panel on a CAPA to see its stage, the evidence on record and what is missing, and to schedule the effectiveness check.</li>
+<li>To enforce the procedure, a Jira admin adds the validator <b>CAPA Keeper: evidence before closure</b> to the transition that closes a CAPA.</li>
+<li>Rovo: choose the agent <b>CAPA Auditor</b> and ask "Which CAPAs are overdue?". The agent is read-only.</li></ol>
+
+<h2 id="privacy">Privacy policy</h2>
+<p><i>Last updated: 16 November 2026</i></p>
+<p>CAPA Keeper runs entirely on Atlassian Forge ("Runs on Atlassian"). It has no servers of its own and sends no data outside Atlassian.</p>
+<ul><li><b>What the app reads:</b> the work items matching the CAPA filter (summary, priority, dates, status, assignee, reporter, description, comments, links and subtasks) and their linked work items, with the permissions of the user viewing them. The workflow validator and the daily reminder read the same data as the app.</li>
+<li><b>What the app changes:</b> only when a user asks it to, it creates one "Effectiveness check" task linked to a CAPA. The daily reminder adds one comment to a CAPA whose effectiveness check has fallen due. Nothing else is changed.</li>
+<li><b>What the app stores:</b> its settings (the CAPA filter, target days, waiting period) and the list of CAPAs it has already reminded, in Forge storage on your site.</li>
+<li><b>Sharing:</b> none. No analytics, no third-party services, no outbound network access, and no language model is called by the app itself.</li>
+<li><b>AI:</b> the Rovo agent and MCP tool return the same facts the panel shows; the language model is Atlassian Rovo, operated by Atlassian under your Atlassian agreement.</li></ul>
+
+<h2 id="terms">Terms of service</h2>
+<p><i>Last updated: 16 November 2026</i></p>
+<p>CAPA Keeper is provided "as is", without warranty of any kind. It supports, and does not replace, your quality management system and its procedures; regulatory compliance remains the responsibility of your organisation. To the extent permitted by law, the developer is not liable for any indirect or consequential damages arising from use of the app. Use of the app is also subject to the Atlassian Marketplace terms.</p>
+</body></html>
