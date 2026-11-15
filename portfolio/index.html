@@ -1,0 +1,48 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kronides: Atlassian Forge, AI web apps, Reddit games</title>
+<meta name="description" content="Working apps with live demos: Atlassian Forge (Jira, Confluence, Rovo, MCP, Teamwork Graph), Firebase AI Logic web apps, Reddit Devvit games.">
+<style>
+:root{--ink:#172b4d;--mute:#5e6c84;--line:#dfe1e6;--card:#fff;--bg:#f7f8fa;--blue:#0c66e4}
+@media (prefers-color-scheme:dark){:root{--ink:#e6edf3;--mute:#9fadbc;--line:#2c333a;--card:#1d2125;--bg:#161a1d;--blue:#579dff}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 system-ui,Segoe UI,sans-serif;color:var(--ink);background:var(--bg)}
+main{max-width:980px;margin:0 auto;padding:40px 20px}h1{margin:0 0 6px;font-size:34px}h2{margin:40px 0 12px;font-size:22px}
+.lead{color:var(--mute);font-size:18px;margin:0 0 8px}a{color:var(--blue)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px}
+.c{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}.c h3{margin:0 0 4px;font-size:18px}
+.c p{margin:6px 0;color:var(--mute);font-size:15px}.tags{font-size:12px;color:var(--mute)}.links a{margin-right:12px;font-size:14px}
+ul{padding-left:20px}</style></head><body><main>
+<h1>Kronides</h1>
+<p class="lead">I build small, useful software that works on the platform you already use, and I ship with a live demo, tests and a short video.</p>
+<p>Every project below is live. You can watch the demo, open the code where it's public, or install it.</p>
+
+<h2>Atlassian Forge apps (Jira, Confluence, Rovo, MCP, Teamwork Graph)</h2>
+<div class="grid">
+<div class="c"><h3>Aftermath</h3><p>From a Jira incident to a blameless postmortem in one click: timeline from history, response times, repeats, a Confluence page and linked follow-ups.</p><p class="tags">jira:issuePanel · projectPage · Confluence v2 · Rovo agent · MCP</p><p class="links"><a href="https://youtu.be/G60w4LhPx9s">Video</a><a href="https://devpost.com/software/aftermath-e0zmny">Write-up</a></p></div>
+<div class="c"><h3>Know Who</h3><p>"Who knows about this?" Ranks people by recent hands-on work in Jira and Confluence, adds their teams from the Teamwork Graph.</p><p class="tags">globalPage · issuePanel · Teamwork Graph · Rovo · MCP</p><p class="links"><a href="https://youtu.be/cxVJ4y8f204">Video</a><a href="https://devpost.com/software/know-who">Write-up</a></p></div>
+<div class="c"><h3>Asked Before</h3><p>For Jira Service Management: finds resolved requests that asked the same thing, picks the reply that solved them and drafts it for the new requester. Submitted to the Atlassian Marketplace.</p><p class="tags">JSM · UI Kit · Rovo · MCP · Marketplace</p><p class="links"><a href="https://youtu.be/Dk71w31Y66o">Video</a><a href="https://devpost.com/software/asked-before-rdo8m9">Write-up</a></p></div>
+<div class="c"><h3>Triage Compass</h3><p>Duplicate, regression or new? Owning team and best assignee for each new bug, from similarity plus the Teamwork Graph.</p><p class="tags">issuePanel · projectPage · Teamwork Graph · Rovo</p><p class="links"><a href="https://youtu.be/nbk6y5Jt6-I">Video</a><a href="https://devpost.com/software/triage-compass">Write-up</a></p></div>
+<div class="c"><h3>Handover Hub</h3><p>When someone leaves: finds everything they own in Jira, suggests who should take each part, reassigns in batches and keeps an audit log.</p><p class="tags">globalPage · bulk operations · Rovo · MCP</p><p class="links"><a href="https://youtu.be/g5Uln1V2V00">Video</a><a href="https://devpost.com/software/handover-hub">Write-up</a></p></div>
+<div class="c"><h3>SoD Guard</h3><p>Segregation of duties for regulated teams: the person who did the work can't approve it, enforced by a workflow validator and audited daily.</p><p class="tags">workflowValidator · scheduledTrigger · Rovo</p><p class="links"><a href="https://youtu.be/YNrzCPMxpv4">Video</a><a href="https://devpost.com/software/sod-guard">Write-up</a></p></div>
+</div>
+
+<h2>AI web apps (Firebase AI Logic, on-device Gemini Nano)</h2>
+<div class="grid">
+<div class="c"><h3>Quiet Ledger</h3><p>Bank statement insights that stay on the device: on-device categorization, exact answers computed by code, cloud only for anonymous totals.</p><p class="tags">Firebase AI Logic hybrid · App Check · Remote Config · Hosting</p><p class="links"><a href="https://quiet-ledger-c9fd6.web.app">Live</a><a href="https://github.com/mertbatis/quiet-ledger">Code</a><a href="https://youtu.be/cAjVbQ6VLTs">Video</a></p></div>
+<div class="c"><h3>Second Look</h3><p>Is this message a scam? Code checks links and senders, Gemini Nano explains in plain words, nothing leaves the device. Chrome extension included.</p><p class="tags">Firebase AI Logic · Chrome extension · App Check</p><p class="links"><a href="https://second-look-kronides.web.app">Live</a><a href="https://github.com/mertbatis/second-look">Code</a><a href="https://youtu.be/T9GBBByipck">Video</a></p></div>
+</div>
+
+<h2>Reddit games (Devvit Web)</h2>
+<div class="grid">
+<div class="c"><h3>Shadowstack</h3><p>Daily spatial puzzle with a proven minimum (bipartite matching), isometric SVG light box.</p><p class="links"><a href="https://www.reddit.com/r/ShadowstackGame/">Play</a></p></div>
+<div class="c"><h3>Bankshot</h3><p>Daily mini-golf with deterministic physics; the server replays every shot.</p><p class="links"><a href="https://www.reddit.com/r/BankshotGame/">Play</a></p></div>
+<div class="c"><h3>Beamline · Tiltyard · Crowdcall</h3><p>Daily light-beam puzzle, tilt-maze with replays, and a "what will the crowd pick" game.</p><p class="links"><a href="https://www.reddit.com/r/BeamlineGame/">Beamline</a><a href="https://www.reddit.com/r/TiltyardGame/">Tiltyard</a><a href="https://www.reddit.com/r/CrowdcallGame/">Crowdcall</a></p></div>
+</div>
+
+<h2>Data and automation</h2>
+<div class="grid">
+<div class="c"><h3>Job board extractors</h3><p>Published Apify actors that read 10 applicant tracking systems into one schema, with incremental runs.</p><p class="links"><a href="https://apify.com/kronides">Apify Store</a></p></div>
+<div class="c"><h3>Trademark bulletin search</h3><p>Turkish trademark bulletins (PDF, 30,000+ applications) parsed into a searchable site with similarity matching.</p><p class="links"><a href="https://mertbatis.github.io/marka-bulteni/">Live</a></p></div>
+</div>
+
+<h2>How I work</h2>
+<ul><li>Fixed scope and price, agreed before work starts.</li><li>A working demo early, then tests, a short write-up and a video of the result.</li><li>Your data stays where it should: no unnecessary third-party services.</li></ul>
+</main></body></html>
