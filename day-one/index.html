@@ -19,7 +19,7 @@
 <p>Day One runs entirely on Atlassian Forge ("Runs on Atlassian"). It has no servers of its own and sends no data outside Atlassian.</p>
 <ul><li><b>What the app reads:</b> the onboarding work items it created and their subtasks (summary, status, due date, assignee), with the permissions of the user viewing them; the daily reminder reads the same as the app.</li>
 <li><b>What the app changes:</b> when a user starts an onboarding, it creates one work item and its subtasks in the configured project and stores the plan (new hire name, start date, manager, buddy, template and task keys) as a property of that work item. The daily reminder adds one comment to an overdue task (once per due date). Nothing else is changed.</li>
-<li><b>What the app stores:</b> its settings (project key, the person for each team), the templates, an index of onboardings and the list of reminders sent, in Forge storage on your site.</li>
+<li><b>What the app stores:</b> its settings (project key and the account ID of the person for each team), the templates and the list of reminders sent, in Forge storage on your site. The onboarding plan itself is a property of the onboarding work item in Jira.</li>
 <li><b>Sharing:</b> none. No analytics, no third-party services, no outbound network access, and no language model is called by the app itself.</li>
 <li><b>AI:</b> the Rovo agent and MCP tools return the same facts the board shows; the language model is Atlassian Rovo, operated by Atlassian under your Atlassian agreement.</li></ul>
 
