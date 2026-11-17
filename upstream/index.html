@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Upstream for Jira — support, privacy, terms</title>
+<style>body{font:16px/1.6 system-ui,sans-serif;max-width:760px;margin:48px auto;padding:0 20px;color:#172b4d}a{color:#0c66e4}h2{margin-top:2em}</style></head><body>
+<h1>Upstream for Jira</h1>
+<p>Upstream answers "will the work I depend on land in time?". For a work item it walks the "is blocked by" chain in any project, compares due dates and release dates, forecasts the earliest finish, shows the critical path and flags upstream work that is late, overdue, undated, unassigned or not started. A project page lists every blocked item and the teams you are waiting on. The same analysis is available as a Rovo agent and an MCP tool.</p>
+
+<h2 id="support">Support</h2>
+<p>Questions, bugs and feature requests: open an issue at <a href="https://github.com/mertbatis/kronides-apps/issues">github.com/mertbatis/kronides-apps/issues</a>. We aim to answer within two business days.</p>
+<h3>Setup</h3>
+<ol><li>Install the app in Jira.</li>
+<li>Open a work item with "is blocked by" links and expand the <b>Upstream</b> panel (View app actions → Upstream).</li>
+<li>Open a project's <b>Dependency risk</b> page from the project navigation.</li>
+<li>Rovo: choose the agent <b>Upstream</b> and ask "Which items in WEB will slip because of dependencies?".</li></ol>
+
+<h2 id="privacy">Privacy policy</h2>
+<p><i>Last updated: 17 November 2026</i></p>
+<p>Upstream runs entirely on Atlassian Forge ("Runs on Atlassian"). It has no servers of its own and sends no data outside Atlassian.</p>
+<ul><li><b>What the app reads:</b> work items (summary, status, due date, fix versions, assignee, project, Team field and issue links), always with the permissions of the user who is asking.</li>
+<li><b>What the app changes:</b> only when a user presses <b>Ask for a date</b>, it adds a comment, as that user, on the upstream work item.</li>
+<li><b>What the app stores:</b> nothing. Results are computed on request.</li>
+<li><b>Sharing:</b> none. No analytics, no third-party services, no outbound network access, no language model called by the app; the Rovo agent uses Atlassian Rovo under your Atlassian agreement.</li></ul>
+
+<h2 id="terms">Terms of service</h2>
+<p><i>Last updated: 17 November 2026</i></p>
+<p>Upstream is provided "as is", without warranty of any kind. Forecasts are based on the dates recorded in Jira and can be wrong when those dates are. To the extent permitted by law, the developer is not liable for any indirect or consequential damages arising from use of the app. Use of the app is also subject to the Atlassian Marketplace terms.</p>
+</body></html>
